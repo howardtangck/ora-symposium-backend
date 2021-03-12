@@ -33,7 +33,8 @@ docker-build:
 
     - internal/docker-push: 
         image-name: $APP_NAME
-        username: $PRIVATE_REGISTRY_USERNAME
+        # username: $PRIVATE_REGISTRY_USERNAME
+        username: $CONTAINER_REGISTRY_USERNAME
         password: $API_USER_TOKEN
         # repository: $PRIVATE_REGISTRY_PATH/$TENANCY_NAME/$REPO_NAME 
         repository: $DOCKER_REPO
