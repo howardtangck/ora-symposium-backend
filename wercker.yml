@@ -35,8 +35,7 @@ docker-build:
         image-name: $APP_NAME
         username: $PRIVATE_REGISTRY_USERNAME
         password: $API_USER_TOKEN
-        repository: $TENANCY_NAME/$REPO_NAME
-        registry: $PRIVATE_REGISTRY_PATH 
+        repository: $PRIVATE_REGISTRY_PATH/$TENANCY_NAME/$REPO_NAME 
         tag: ${WERCKER_GIT_BRANCH}-${WERCKER_GIT_COMMIT},latest
         
   after-steps:
