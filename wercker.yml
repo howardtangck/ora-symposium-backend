@@ -65,7 +65,7 @@ kubernetes-deploy:
         name: Remove template files
         cwd: $WERCKER_ROOT/.
         code: |
-          rm *.template.yaml
+          rm *.yaml.template
     - script:
         name: debug
         cwd: $WERCKER_ROOT/.
