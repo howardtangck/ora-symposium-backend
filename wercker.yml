@@ -35,7 +35,9 @@ docker-build:
         image-name: $APP_NAME
         username: $PRIVATE_REGISTRY_USERNAME
         password: $API_USER_TOKEN
-        repository: $PRIVATE_REGISTRY_PATH/$TENANCY_NAME/$REPO_NAME 
+        # repository: $PRIVATE_REGISTRY_PATH/$TENANCY_NAME/$REPO_NAME 
+        repository: $DOCKER_REPO
+        registry: https://ap-seoul-1.ocir.io/v2
         tag: ${WERCKER_GIT_BRANCH}-${WERCKER_GIT_COMMIT},latest
         
   after-steps:
