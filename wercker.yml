@@ -95,7 +95,7 @@ kubernetes-deploy:
         token: $KUBE_USER_TOKEN
         insecure-skip-tls-verify: true
         cwd: $WERCKER_ROOT/.
-        command: -n se-test create secret docker-registry $OCIR_SECRET_NAME --docker-server='${PRIVATE_REGISTRY_PATH}' --docker-username=$CONTAINER_REGISTRY_USERNAME --docker-password='${API_USER_TOKEN}' --docker-email='vamsi.ramakrishnan@oracle.com' 
+        command: -n $K8SNAMESPACE create secret docker-registry $OCIR_SECRET_NAME --docker-server='${PRIVATE_REGISTRY_PATH}' --docker-username=$CONTAINER_REGISTRY_USERNAME --docker-password='${API_USER_TOKEN}' --docker-email='vamsi.ramakrishnan@oracle.com' 
         
     - kubectl:
         server: $KUBE_ENDPOINT
