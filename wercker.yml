@@ -88,7 +88,7 @@ kubernetes-deploy:
         token: $KUBE_USER_TOKEN
         insecure-skip-tls-verify: true
         cwd: $WERCKER_ROOT/.
-        command: -n $K8SNAMESPACE delete secret $OCIR_SECRET_NAME
+        command: -n $K8SNAMESPACE delete secret $OCIR_SECRET_NAME --validate=false
 
     - kubectl:
         server: $KUBE_ENDPOINT
