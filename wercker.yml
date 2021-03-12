@@ -102,7 +102,7 @@ kubernetes-deploy:
         token: $KUBE_USER_TOKEN
         insecure-skip-tls-verify: true
         cwd: $WERCKER_ROOT/.
-        command: -n se-test apply -f backend-api-deployment.yaml
+        command: -n $K8SNAMESPACE apply -f backend-api-deployment.yaml --validate=false
         
   after-steps:
     - install-packages:
