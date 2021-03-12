@@ -35,6 +35,7 @@ spec:
       - name: test
         # image: $PRIVATE_REGISTRY_PATH/$TENANCY_NAME/$REPO_NAME/$APP_NAME:${WERCKER_GIT_BRANCH}-${WERCKER_GIT_COMMIT}
         image: $DOCKER_REPO/$APP_NAME:${WERCKER_GIT_BRANCH}-${WERCKER_GIT_COMMIT}
+        #
         ports:
         - containerPort: 4000
           protocol: TCP
