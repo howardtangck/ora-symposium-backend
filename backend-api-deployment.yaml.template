@@ -20,7 +20,6 @@ metadata:
 spec:
   replicas: 4
   selector:
-    matchLabels:
       app: $APP_NAME
   template:
     metadata:
@@ -31,8 +30,8 @@ spec:
       imagePullSecrets:
       - name: $OCIR_SECRET_NAME
       containers:
-      # - name: $APP_NAME
-      - name: ora-se-symposium-backend-service
+      - name: $APP_NAME
+      # - name: ora-se-symposium-backend-service
         # image: $PRIVATE_REGISTRY_PATH/$TENANCY_NAME/$REPO_NAME/$APP_NAME:${WERCKER_GIT_BRANCH}-${WERCKER_GIT_COMMIT}
         image: $DOCKER_REPO/$APP_NAME:${WERCKER_GIT_BRANCH}-${WERCKER_GIT_COMMIT}
         #
