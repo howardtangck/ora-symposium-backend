@@ -20,6 +20,7 @@ metadata:
 spec:
   replicas: 4
   selector:
+    matchLabels:
       app: $APP_NAME
   template:
     metadata:
