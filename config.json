@@ -1,6 +1,5 @@
 {
-    #"connectionString": "mongodb://mongodb-test-mongodb-replicaset-0.mongodb-test-mongodb-replicaset.se-test.svc.cluster.local,mongodb-test-mongodb-replicaset-1.mongodb-test-mongodb-replicaset.se-test.svc.cluster.local,mongodb-test-mongodb-replicaset-2.mongodb-test-mongodb-replicaset.se-test.svc.cluster.local:27017/se-symposium-backend?replicaSet=rs0&readPreference=secondaryPreferred",
+    
     "connectionString": "mongodb://my-release-mongodb.default.svc.cluster.local:27017/se-symposium-backend?replicaSet=rs0&readPreference=secondaryPreferred",
-    # "secret": "OrAcLe@Se_SyMpoSiUm_2018_JaIpUr!"
     "secret": "tgyGOYQqsU%"
 }
