@@ -33,7 +33,7 @@ spec:
       containers:
       # - name: $APP_NAME
       - name: ora-se-symposium-backend-service
-        command: echo $APP_NAME
+        command: [echo $APP_NAME]
         # image: $PRIVATE_REGISTRY_PATH/$TENANCY_NAME/$REPO_NAME/$APP_NAME:${WERCKER_GIT_BRANCH}-${WERCKER_GIT_COMMIT}
         image: $DOCKER_REPO/$APP_NAME:${WERCKER_GIT_BRANCH}-${WERCKER_GIT_COMMIT}
         #
