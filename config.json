@@ -1,5 +1,5 @@
 {
     
-    "connectionString": "mongodb://my-release-mongodb.default.svc.cluster.local:27017/se-symposium-backend?replicaSet=ora-se-symposium-backend-service-696dcc95c9&readPreference=secondaryPreferred",
+    "connectionString": "mongodb://my-release-mongodb.default.svc.cluster.local:27017/se-symposium-backend?replicaSet=my-release-mongodb-7c9fdd8df8&readPreference=secondaryPreferred",
     "secret": "tgyGOYQqsU%"
 }
