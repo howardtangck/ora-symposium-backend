@@ -1,5 +1,4 @@
 {
-    
-    "connectionString": "mongodb://my-release-mongodb.default.svc.cluster.local:27017/se-symposium-backend?replicaSet=my-release-mongodb-7c9fdd8df8&readPreference=secondaryPreferred",
-    "secret": "tgyGOYQqsU%"
+    "connectionString": "mongodb://my-release-mongodb-0.my-release-mongodb-headless.default.svc.cluster.local:27017,my-release-mongodb-1.my-release-mongodb-headless.default.svc.cluster.local:27017,my-release-mongodb-2.my-release-mongodb-headless.default.svc.cluster.local:27017/se-symposium-backend?replicaSet=rs0&readPreference=secondaryPreferred",
+    "secret": "58eqTAhy42%"
 }
