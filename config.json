@@ -1,4 +1,4 @@
 {
-    "connectionString": "mongodb://my-release-mongodb-0.my-release-mongodb-headless.default.svc.cluster.local:27017,my-release-mongodb-1.my-release-mongodb-headless.default.svc.cluster.local:27017,my-release-mongodb-2.my-release-mongodb-headless.default.svc.cluster.local:27017/se_symposium_backend_api?replicaSet=rs0&readPreference=secondaryPreferred",
+    "connectionString": "mongodb://my-release-mongodb-0.my-release-mongodb-headless.default.svc.cluster.local:27017,my-release-mongodb-1.my-release-mongodb-headless.default.svc.cluster.local:27017,my-release-mongodb-2.my-release-mongodb-headless.default.svc.cluster.local:27017/?replicaSet=rs0&readPreference=secondaryPreferred",
     "secret": "58eqTAhy42%"
 }
